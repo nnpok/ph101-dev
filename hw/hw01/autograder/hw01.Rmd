@@ -1,0 +1,91 @@
+---
+title: "Assignment 1: R Basics"
+author: "Your name and student ID"
+date: "Today's date"
+output: pdf_document
+---
+
+### Instructions 
+* Complete this assignment.
+* Instructions for submission.
+* Due date:
+
+```{r setup, include = FALSE}
+# Don't change these lines, just run them!
+source("setup/hw01.RAGS.R")
+```
+
+\newpage
+
+**1. [2 points] Assign two integers of your choosing to the values x and y such that they sum to 10.**
+
+```{r}
+x <- "<<<<YOUR CODE HERE>>>>"
+y <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+x <- 2
+y <- 8
+# END SOLUTION
+
+check_problem1()
+```
+
+\newpage
+
+
+**2. [1 point] Assign the product of x and y to a variable z.**
+
+```{r}
+z <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+z <- x * y
+# END SOLUTION
+
+check_problem2()
+```
+\newpage
+
+**3. [1 point] What function do we use to load packages?**
+```{r}
+# p3 <- "load"
+# p3 <- "library"
+# p3 <- "package"
+# p3 <- "read"
+
+# BEGIN SOLUTION
+p3 <- "library"
+
+# END SOLUTION
+check_problem3()
+```
+
+\newpage
+
+**4. [1 point] Load the nycflights13 package and assign subsetFlights to the first 10 rows of the `flights` dataset.**
+```{r}
+library(nycflights13)
+subsetFlights <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+subsetFlights <- flights[1:10,]
+
+# END SOLUTION
+check_problem4()
+```
+
+**5. [1 point] What are you looking forward to learning in this class?**
+
+// BEGIN SOLUTION
+
+Looking forward to learning lots! :)
+
+// END SOLUTION
+
+### Check your score
+```{r check-total-score}
+# Just run this chunk.
+total_score()
+```
+

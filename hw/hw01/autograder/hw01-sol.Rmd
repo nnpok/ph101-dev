@@ -1,0 +1,111 @@
+---
+title: "Assignment 1: R Basics"
+author: "Your name and student ID"
+date: "Today's date"
+output: pdf_document
+---
+
+### Instructions 
+* Complete this assignment.
+* Instructions for submission.
+* Due date:
+
+```{r setup, include = FALSE}
+# Don't change these lines, just run them!
+source("setup/hw01.RAGS.R")
+```
+
+\newpage
+
+**1. [2 points] Assign two integers of your choosing to the values x and y such that they sum to 10.**
+
+```{r}
+x <- "<<<<YOUR CODE HERE>>>>"
+y <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+x <- 2
+y <- 8
+# END SOLUTION
+
+check_problem1()
+```
+
+\newpage
+
+
+**2. [1 point] Assign the product of x and y to a variable z.**
+
+```{r}
+z <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+z <- x * y
+# END SOLUTION
+
+check_problem2()
+```
+\newpage
+
+**3. [1 point] What function do we use to load packages?**
+```{r}
+# p3 <- "load"
+# p3 <- "library"
+# p3 <- "package"
+# p3 <- "read"
+
+# BEGIN SOLUTION
+p3 <- "library"
+
+# END SOLUTION
+check_problem3()
+```
+
+\newpage
+
+**4. [1 point] Load the nycflights13 package and assign subsetFlights to the first 10 rows of the `flights` dataset.**
+```{r}
+library(nycflights13)
+subsetFlights <- "<<<<YOUR CODE HERE>>>>"
+
+# BEGIN SOLUTION
+subsetFlights <- flights[1:10,]
+
+# END SOLUTION
+check_problem4()
+```
+
+**5. [1 point] What are you looking forward to learning in this class?**
+
+// BEGIN SOLUTION
+
+Looking forward to learning lots! :)
+
+// END SOLUTION
+
+### Check your score
+```{r check-total-score}
+# Just run this chunk.
+total_score()
+```
+
+
+### Submission
+
+For assignments in this class, you'll be submitting using the **Terminal** tab in the pane below. In order for the submission to work properly, make sure that:
+
+1. Any image or data files you add that are needed to knit the file are in the `src` folder and file paths are specified accordingly. 
+2. You **have not changed the file name** of the assignment.
+3. The file knits properly.
+
+Once you have checked these items, you can proceed to submit your assignment.
+
+1. Click on the **Terminal** tab in the pane below.
+2. Copy-paste the following line of code into the terminal and press enter.
+
+cd; cd ph101-fa20/hw/hw01; python3 turn_in.py
+
+3. Follow the prompts to enter your Gradescope username and password.
+4. If the submission is successful, you should see "Submission successful!" appear as output.
+5. If the submission fails, try to diagnose the issue using the error messages--if you have problems, post on Piazza under the post "Submission Issues".
+6. Follow the provided links to make sure your submission on Gradescope is as intended.

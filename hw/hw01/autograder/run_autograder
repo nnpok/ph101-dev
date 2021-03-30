@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+mv -v source/* .;
+mv -v submission/* .;
+mkdir -p results/
+Rscript autograde.R hw01.Rmd > ../../../LOG;
